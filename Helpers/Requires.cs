@@ -6,7 +6,7 @@ using System.IO;
 using System.Linq;
 using Common.Shared.Extensions;
 using Common.Shared.Extensions.Enumerables;
-using Common.Shared.Helpers.Internal;
+using Common.Shared.Internal.Helpers;
 using Res = Common.Shared.Properties.Resources;
 
 // ReSharper disable ParameterOnlyUsedForPreconditionCheck.Global

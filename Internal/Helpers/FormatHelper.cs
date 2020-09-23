@@ -11,9 +11,9 @@ using Res = Common.Shared.Properties.Resources;
 
 // ReSharper disable UnusedVariable
 
-namespace Common.Shared.Helpers
+namespace Common.Shared.Internal.Helpers
 {
-    public static class FormatHelper
+    internal static class FormatHelper
     {
         public static string FormatObject(object source, bool includeNames = true, Func<KeyValuePair<string, object>, object>? itemFunc = null, bool inheritProperties = false)
         {
@@ -60,7 +60,7 @@ namespace Common.Shared.Helpers
                 switch (value)
                 {
                     case null:
-                        result = null; // Const.Na;
+                        result = null; 
                         break;
                     case string @string:
                         if (memberInfo?.IsDefined(typeof(StringLengthAttribute)) == true)

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using Common.Shared.Helpers;
-using Common.Shared.Helpers.Internal;
+using Common.Shared.Internal.Helpers;
 
 namespace Common.Shared.Extensions.Enumerables.Specialized
 {

@@ -1,7 +1,8 @@
 ﻿using System;
 using Common.Shared.Extensions;
+using Common.Shared.Helpers;
 
-namespace Common.Shared.Helpers.Internal
+namespace Common.Shared.Internal.Helpers
 {
     internal static class ExceptionsHelper
     {

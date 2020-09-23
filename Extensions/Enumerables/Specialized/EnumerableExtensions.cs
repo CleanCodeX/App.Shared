@@ -85,7 +85,5 @@ namespace Common.Shared.Extensions.Enumerables.Specialized
             Task.WhenAll(
                 from item in source
                 select Task.Run(() => body(item)));
-
-        public static IEnumerable<string> ReplaceNonBreakSpaces(this IEnumerable<string> source) => source.Select(e => e.Replace(((char)160).ToString(), " ").Replace("&#160;", " ").Replace("&nbsp;", " "));
     }
 }

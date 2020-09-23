@@ -6,7 +6,7 @@ using System.Linq.Expressions;
 using System.Text.Json;
 using Common.Shared.Extensions.Copy;
 using Common.Shared.Helpers;
-using Common.Shared.Helpers.Internal;
+using Common.Shared.Internal.Helpers;
 
 namespace Common.Shared.Extensions
 {

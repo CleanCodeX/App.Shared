@@ -1,10 +1,10 @@
 ﻿using System.Reflection;
 using System.Text;
-using Common.Shared.Helpers;
+using Common.Shared.Internal.Helpers;
 
-namespace Common.Shared.Extensions
+namespace Common.Shared.Internal.Extensions
 {
-    public static class StringBuilderExtensions
+    internal static class StringBuilderExtensions
     {
         public static void AppendObjectInstanceProperties(this StringBuilder source, object instance) => source.AppendLine(FormatHelper.FormatObject(instance, inheritProperties: true));
 
@@ -21,6 +21,5 @@ namespace Common.Shared.Extensions
                 source.AppendLine(
                     $"{memberInfo.Name}: {memberInfo.GetValue(instance).FormatValue(memberInfo)}");
         }
-
     }
 }

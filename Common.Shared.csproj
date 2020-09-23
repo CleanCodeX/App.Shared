@@ -8,7 +8,7 @@
     <Company>CleanCodeX</Company>
     <RepositoryUrl>https://github.com/CleanCodeX/Common.Shared</RepositoryUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.0-a1</Version>
+    <Version>1.0.0-a2</Version>
     <Description>Provides commonly used helpers and extensions.</Description>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>

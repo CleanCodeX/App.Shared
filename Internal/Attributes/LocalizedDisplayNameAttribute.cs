@@ -4,10 +4,10 @@ using System.Reflection;
 using Common.Shared.Extensions;
 using Common.Shared.Properties;
 
-namespace Common.Shared.Attributes
+namespace Common.Shared.Internal.Attributes
 {
     [AttributeUsage(AttributeTargets.Property | AttributeTargets.Event | AttributeTargets.Class | AttributeTargets.Method | AttributeTargets.Field | AttributeTargets.Enum)]
-    public class LocalizedDisplayNameAttribute : DisplayNameAttribute
+    internal class LocalizedDisplayNameAttribute : DisplayNameAttribute
     {
         internal LocalizedDisplayNameAttribute(string displayNameKey) : this(displayNameKey, typeof(Resources))
         { }

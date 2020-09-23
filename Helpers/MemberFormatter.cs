@@ -10,7 +10,7 @@ using System.Text;
 using Common.Shared.Attributes;
 using Common.Shared.Extensions;
 using Common.Shared.Extensions.Enumerables;
-using Common.Shared.Properties;
+using Common.Shared.Internal.Helpers;
 using Res = Common.Shared.Properties.Resources;
 
 namespace Common.Shared.Helpers
@@ -105,7 +105,7 @@ namespace Common.Shared.Helpers
 
                 void AddDictionary()
                 {
-                    sb2.AppendLine($"{name}: ({Resources.Dictionary})");
+                    sb2.AppendLine($"{name}: ({Res.Dictionary})");
                     if (dict.IsNotEmpty())
                     {
                         sb2.AppendLine("{");
@@ -119,7 +119,7 @@ namespace Common.Shared.Helpers
 
                 void AddList(IEnumerable list)
                 {
-                    sb2.AppendLine($"{name}: ({Resources.List})");
+                    sb2.AppendLine($"{name}: ({Res.List})");
                     if (list.IsNotEmpty())
                     {
                         sb2.AppendLine("[");
