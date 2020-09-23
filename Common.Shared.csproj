@@ -4,15 +4,16 @@
     <TargetFramework>net5.0</TargetFramework>
     <LangVersion>preview</LangVersion>
     <Nullable>enable</Nullable>
-    <Authors>Krauter Softwaretechnik</Authors>
-    <Company>Krauter Softwaretechnik</Company>
+    <Authors>CleanCodeX</Authors>
+    <Company>CleanCodeX</Company>
     <RepositoryUrl>https://github.com/CleanCodeX/Common.Shared</RepositoryUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Version>1.0.0-a1</Version>
     <Description>Provides commonly used helpers and extensions.</Description>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <PackageId>KS.Common.Shared</PackageId>
+    <PackageId>CCX.Common.Shared</PackageId>
+    <PackageTags></PackageTags>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
