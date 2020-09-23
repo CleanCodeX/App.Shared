@@ -1,0 +1,60 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <LangVersion>preview</LangVersion>
+    <Nullable>enable</Nullable>
+    <Authors>Krauter Softwaretechnik</Authors>
+    <Company>Krauter Softwaretechnik</Company>
+    <RepositoryUrl>https://github.com/CleanCodeX/Common.Shared</RepositoryUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.0-a1</Version>
+    <Description>Provides commonly used helpers and extensions.</Description>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile></DocumentationFile>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectCapability Include="DynamicDependentFile" />
+    <ProjectCapability Include="DynamicFileNesting" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CompareNETObjects" Version="4.66.0" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="9.3.0-preview2" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    <PackageReference Include="Microsoft.Extensions.Identity.Stores" Version="5.0.0-rc.1.20451.17" />
+    <PackageReference Include="Microsoft.Extensions.Primitives" Version="5.0.0-rc.1.20451.14" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0-rc.1.20451.14" />
+    <PackageReference Include="System.Text.Json" Version="5.0.0-rc.1.20451.14" />
+    <PackageReference Include="Toolbelt.EntityFrameworkCore.IndexAttribute" Version="5.0.0" />
+    <PackageReference Include="System.CodeDom" Version="5.0.0-rc.1.20451.14" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
