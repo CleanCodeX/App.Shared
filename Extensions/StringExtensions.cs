@@ -5,7 +5,6 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
-using System.Text.Json;
 using Common.Shared.Extensions.Enumerables.Specialized;
 using Common.Shared.Helpers;
 using Microsoft.Extensions.Primitives;
@@ -14,10 +13,6 @@ namespace Common.Shared.Extensions
 {
     public static partial class StringExtensions
     {
-#pragma warning disable CA2211 
-        public static Func<string, string>? StandardFormatter;
-#pragma warning restore CA2211 
-
         public static string? PathJoin(this string? path1, string? path2)
         {
             if (path1!.IsNullOrEmpty()) return path2;
@@ -94,10 +89,6 @@ namespace Common.Shared.Extensions
             return newString;
         }
 
-        public static string? RemoveQuotes(this string? source) => source!.IsNullOrEmpty() 
-            ? source 
-            : source!.Replace(@"""", string.Empty);
-
         public static string? Remove(this string? source, string? textToRemove)
         {
             if (source!.IsNullOrEmpty()) return source;
@@ -106,16 +97,6 @@ namespace Common.Shared.Extensions
                 ? source 
                 : source!.Replace(textToRemove, string.Empty);
         }
-
-        public static string? EscapeSpaces(this string? source) =>
-            source!.IsNullOrEmpty()
-                ? source
-                : source!.Replace(" ", "%20");
-
-        public static string? RemoveSingleQuotes(this string? source) =>
-            source!.IsNullOrEmpty()
-                ? source
-                : source!.Replace(@"'", string.Empty);
 
         /// <summary>
         /// Returns the substring until the given <paramref name="occurrence"/>
@@ -349,11 +330,6 @@ namespace Common.Shared.Extensions
             return source[(includeOccurrence ? index : index + 1)..];
         }
 
-        [return: NotNull]
-        public static string Quote(this string? str, string quoteCharacter) => $"{quoteCharacter}{str}{quoteCharacter}";
-        [return: NotNull]
-        public static string Quote(this string? str, char quoteCharacter = '"') => $"{quoteCharacter}{str}{quoteCharacter}";
-
         public static Guid ToGuid(this string? str)
         {
             if (str.IsNullOrEmpty())
@@ -473,9 +449,6 @@ namespace Common.Shared.Extensions
 
         }
 
-        public static string ToBase64(this string input) => Convert.ToBase64String(Encoding.ASCII.GetBytes(input));
-        public static string FromBase64(this string input) => Encoding.ASCII.GetString(Convert.FromBase64String(input));
-
         // Make it private as there is the name makes no sense for an outside caller
         private static bool IsInvalid(char value)
         {
@@ -487,28 +460,6 @@ namespace Common.Shared.Extensions
             if (intValue >= 97 && intValue <= 122)
                 return false;
             return intValue != 43 && intValue != 47;
-        }
-
-        public static string FormatJson(this string json)
-        {
-            if (json.IsNullOrEmpty()) return json;
-
-            try
-            {
-                var t = json.FromJson<object>()!;
-                return t.ToJson(new JsonSerializerOptions { WriteIndented = true });
-            }
-            catch (Exception)
-            {
-                return json;
-            }
-        }
-
-        public static T? FromJson<T>(this string json, JsonSerializerOptions? options = default)
-        {
-            var data = options == default ? JsonSerializer.Deserialize<T>(json) : JsonSerializer.Deserialize<T>(json, options);
-
-            return data;
         }
     }
 }
