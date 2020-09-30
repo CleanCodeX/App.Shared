@@ -10,7 +10,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Version>1.0.0-a4</Version>
     <Description>Provides commonly used helpers and extensions.</Description>
-    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageId>CCX.Common.Shared</PackageId>
     <PackageTags></PackageTags>
@@ -37,13 +37,6 @@
     <PackageReference Include="Microsoft.Extensions.Identity.Stores" Version="5.0.0-rc.1.20451.17" />
     <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0-rc.1.20451.14" />
     <PackageReference Include="System.Text.Json" Version="5.0.0-rc.1.20451.14" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="LICENSE.txt">
-      <Pack>True</Pack>
-      <PackagePath></PackagePath>
-    </None>
   </ItemGroup>
 
   <ItemGroup>
