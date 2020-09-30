@@ -13,7 +13,6 @@ using Res = Common.Shared.Properties.Resources;
 
 namespace Common.Shared.Helpers
 {
-    
     [DebuggerDisplay("{" + nameof(Name) + "}")]
     public class SyncLock
     {

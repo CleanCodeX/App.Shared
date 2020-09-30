@@ -8,7 +8,7 @@
     <Company>CleanCodeX</Company>
     <RepositoryUrl>https://github.com/CleanCodeX/Common.Shared</RepositoryUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.0-a3</Version>
+    <Version>1.0.0-a4</Version>
     <Description>Provides commonly used helpers and extensions.</Description>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
@@ -22,21 +22,21 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
   <ItemGroup>
     <ProjectCapability Include="DynamicDependentFile" />
     <ProjectCapability Include="DynamicFileNesting" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="CompareNETObjects" Version="4.66.0" />
-    <PackageReference Include="FluentValidation.AspNetCore" Version="9.3.0-preview2" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    <PackageReference Include="CompareNETObjects" Version="4.67.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="1.1.0" />
     <PackageReference Include="Microsoft.Extensions.Identity.Stores" Version="5.0.0-rc.1.20451.17" />
-    <PackageReference Include="Microsoft.Extensions.Primitives" Version="5.0.0-rc.1.20451.14" />
     <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0-rc.1.20451.14" />
     <PackageReference Include="System.Text.Json" Version="5.0.0-rc.1.20451.14" />
-    <PackageReference Include="Toolbelt.EntityFrameworkCore.IndexAttribute" Version="5.0.0" />
-    <PackageReference Include="System.CodeDom" Version="5.0.0-rc.1.20451.14" />
   </ItemGroup>
 
   <ItemGroup>
@@ -48,16 +48,20 @@
 
   <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.de.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Update="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <Generator>ResXFileCodeGenerator</Generator>
     </EmbeddedResource>
   </ItemGroup>
 </Project>

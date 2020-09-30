@@ -331,7 +331,7 @@ namespace Common.Shared.Properties {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die  ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die Trace ähnelt.
         /// </summary>
         internal static string Trace {
             get {

@@ -89,12 +89,14 @@ namespace Common.Shared.Extensions
 
         public static bool IsSubclassOfGeneric(this Type typeToCheck, Type genericType)
         {
+            var nextType = typeToCheck;
+
             while (true)
             {
-                if (typeToCheck is null || typeToCheck == typeof(object)) return false;
-                if (typeToCheck.IsGenericType && typeToCheck.GetGenericTypeDefinition() == genericType) return true;
+                if (nextType is null || nextType == typeof(object)) return false;
+                if (nextType.IsGenericType && nextType.GetGenericTypeDefinition() == genericType) return true;
 
-                typeToCheck = typeToCheck.BaseType!;
+                nextType = nextType.BaseType;
             }
         }
 
