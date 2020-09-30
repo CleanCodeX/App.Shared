@@ -22,7 +22,7 @@ namespace Common.Shared.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace Common.Shared.Properties {
         ///   Gibt die zwischengespeicherte ResourceManager-Instanz zurück, die von dieser Klasse verwendet wird.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Common.Shared.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace Common.Shared.Properties {
         ///   Ressourcenzuordnungen, die diese stark typisierte Ressourcenklasse verwenden.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace Common.Shared.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Active ähnelt.
         /// </summary>
-        internal static string Active {
+        public static string Active {
             get {
                 return ResourceManager.GetString("Active", resourceCulture);
             }
@@ -72,7 +72,7 @@ namespace Common.Shared.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Value contains non existing directory path: &quot;{0}&quot;. ähnelt.
         /// </summary>
-        internal static string ArgumentDirectoryNotExistsTemplate {
+        public static string ArgumentDirectoryNotExistsTemplate {
             get {
                 return ResourceManager.GetString("ArgumentDirectoryNotExistsTemplate", resourceCulture);
             }
@@ -81,7 +81,7 @@ namespace Common.Shared.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Value must be &quot;{0}&quot;. Is &quot;{1}&quot;. ähnelt.
         /// </summary>
-        internal static string ArgumentEqualCompareCurrentTemplate {
+        public static string ArgumentEqualCompareCurrentTemplate {
             get {
                 return ResourceManager.GetString("ArgumentEqualCompareCurrentTemplate", resourceCulture);
             }
@@ -90,7 +90,7 @@ namespace Common.Shared.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Value contains none-existing file path: &quot;{0}&quot;. ähnelt.
         /// </summary>
-        internal static string ArgumentFileNotExistsTemplate {
+        public static string ArgumentFileNotExistsTemplate {
             get {
                 return ResourceManager.GetString("ArgumentFileNotExistsTemplate", resourceCulture);
             }
@@ -99,7 +99,7 @@ namespace Common.Shared.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die List must contain at least one element. ähnelt.
         /// </summary>
-        internal static string ArgumentListNotEmptyMaxLength {
+        public static string ArgumentListNotEmptyMaxLength {
             get {
                 return ResourceManager.GetString("ArgumentListNotEmptyMaxLength", resourceCulture);
             }
@@ -108,7 +108,7 @@ namespace Common.Shared.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Maximum filesize exceeded. Size: {0} (max.: {1}). ähnelt.
         /// </summary>
-        internal static string ArgumentMaxFileSizeExceededSizeTemplate {
+        public static string ArgumentMaxFileSizeExceededSizeTemplate {
             get {
                 return ResourceManager.GetString("ArgumentMaxFileSizeExceededSizeTemplate", resourceCulture);
             }
@@ -117,7 +117,7 @@ namespace Common.Shared.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Text exceeds maximum length of {0} characters. ähnelt.
         /// </summary>
-        internal static string ArgumentMaxLengthTemplate {
+        public static string ArgumentMaxLengthTemplate {
             get {
                 return ResourceManager.GetString("ArgumentMaxLengthTemplate", resourceCulture);
             }
@@ -126,7 +126,7 @@ namespace Common.Shared.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Value must be false. ähnelt.
         /// </summary>
-        internal static string ArgumentMustBeFalse {
+        public static string ArgumentMustBeFalse {
             get {
                 return ResourceManager.GetString("ArgumentMustBeFalse", resourceCulture);
             }
@@ -135,7 +135,7 @@ namespace Common.Shared.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Value must be negative. ähnelt.
         /// </summary>
-        internal static string ArgumentMustBeNegative {
+        public static string ArgumentMustBeNegative {
             get {
                 return ResourceManager.GetString("ArgumentMustBeNegative", resourceCulture);
             }
@@ -144,7 +144,7 @@ namespace Common.Shared.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Value must be null. ähnelt.
         /// </summary>
-        internal static string ArgumentMustBeNull {
+        public static string ArgumentMustBeNull {
             get {
                 return ResourceManager.GetString("ArgumentMustBeNull", resourceCulture);
             }
@@ -153,7 +153,7 @@ namespace Common.Shared.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Value must be positive. ähnelt.
         /// </summary>
-        internal static string ArgumentMustBePositive {
+        public static string ArgumentMustBePositive {
             get {
                 return ResourceManager.GetString("ArgumentMustBePositive", resourceCulture);
             }
@@ -162,7 +162,7 @@ namespace Common.Shared.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Value must be true. ähnelt.
         /// </summary>
-        internal static string ArgumentMustBeTrue {
+        public static string ArgumentMustBeTrue {
             get {
                 return ResourceManager.GetString("ArgumentMustBeTrue", resourceCulture);
             }
@@ -171,7 +171,7 @@ namespace Common.Shared.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die &quot;Type {0} needs to implement interface {1}&quot;. ähnelt.
         /// </summary>
-        internal static string ArgumentMustImplementTemplate {
+        public static string ArgumentMustImplementTemplate {
             get {
                 return ResourceManager.GetString("ArgumentMustImplementTemplate", resourceCulture);
             }
@@ -180,7 +180,7 @@ namespace Common.Shared.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Value must not be of type&apos;s default value. ähnelt.
         /// </summary>
-        internal static string ArgumentMustNotBeDefault {
+        public static string ArgumentMustNotBeDefault {
             get {
                 return ResourceManager.GetString("ArgumentMustNotBeDefault", resourceCulture);
             }
@@ -189,7 +189,7 @@ namespace Common.Shared.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Value must not be null. ähnelt.
         /// </summary>
-        internal static string ArgumentMustNotBeNull {
+        public static string ArgumentMustNotBeNull {
             get {
                 return ResourceManager.GetString("ArgumentMustNotBeNull", resourceCulture);
             }
@@ -198,7 +198,7 @@ namespace Common.Shared.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Value must not be equal to &quot;{0}&quot;. ähnelt.
         /// </summary>
-        internal static string ArgumentNotEqualCurrentTemplate {
+        public static string ArgumentNotEqualCurrentTemplate {
             get {
                 return ResourceManager.GetString("ArgumentNotEqualCurrentTemplate", resourceCulture);
             }
@@ -207,7 +207,7 @@ namespace Common.Shared.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Value must not be greater than {0}. (Is {1}). ähnelt.
         /// </summary>
-        internal static string ArgumentNotGreaterThanMaxCurrentTemplate {
+        public static string ArgumentNotGreaterThanMaxCurrentTemplate {
             get {
                 return ResourceManager.GetString("ArgumentNotGreaterThanMaxCurrentTemplate", resourceCulture);
             }
@@ -216,7 +216,7 @@ namespace Common.Shared.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Value must not be greater than or equal to &quot;{0}&quot;. Is &quot;{1}&quot;. ähnelt.
         /// </summary>
-        internal static string ArgumentNotGreaterThanOrEqualMaxCurrentTemplate {
+        public static string ArgumentNotGreaterThanOrEqualMaxCurrentTemplate {
             get {
                 return ResourceManager.GetString("ArgumentNotGreaterThanOrEqualMaxCurrentTemplate", resourceCulture);
             }
@@ -225,7 +225,7 @@ namespace Common.Shared.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Value must not be smaller than &quot;{0}&quot;. Is &quot;{1}&quot;. ähnelt.
         /// </summary>
-        internal static string ArgumentNotLessThanMaxCurrentTemplate {
+        public static string ArgumentNotLessThanMaxCurrentTemplate {
             get {
                 return ResourceManager.GetString("ArgumentNotLessThanMaxCurrentTemplate", resourceCulture);
             }
@@ -234,7 +234,7 @@ namespace Common.Shared.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Value must not be smaller than or equal to &quot;{0}&quot;. Is &quot;{1}&quot;. ähnelt.
         /// </summary>
-        internal static string ArgumentNotLessThanOrEqualMaxCurrentTemplate {
+        public static string ArgumentNotLessThanOrEqualMaxCurrentTemplate {
             get {
                 return ResourceManager.GetString("ArgumentNotLessThanOrEqualMaxCurrentTemplate", resourceCulture);
             }
@@ -243,7 +243,7 @@ namespace Common.Shared.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die String cannot be empty. ähnelt.
         /// </summary>
-        internal static string ArgumentValueNotEmpty {
+        public static string ArgumentValueNotEmpty {
             get {
                 return ResourceManager.GetString("ArgumentValueNotEmpty", resourceCulture);
             }
@@ -252,7 +252,7 @@ namespace Common.Shared.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Count ähnelt.
         /// </summary>
-        internal static string Count {
+        public static string Count {
             get {
                 return ResourceManager.GetString("Count", resourceCulture);
             }
@@ -261,7 +261,7 @@ namespace Common.Shared.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Critical ähnelt.
         /// </summary>
-        internal static string Critical {
+        public static string Critical {
             get {
                 return ResourceManager.GetString("Critical", resourceCulture);
             }
@@ -270,7 +270,7 @@ namespace Common.Shared.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Debug ähnelt.
         /// </summary>
-        internal static string Debug {
+        public static string Debug {
             get {
                 return ResourceManager.GetString("Debug", resourceCulture);
             }
@@ -279,7 +279,7 @@ namespace Common.Shared.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Dictionary ähnelt.
         /// </summary>
-        internal static string Dictionary {
+        public static string Dictionary {
             get {
                 return ResourceManager.GetString("Dictionary", resourceCulture);
             }
@@ -288,7 +288,7 @@ namespace Common.Shared.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Error ähnelt.
         /// </summary>
-        internal static string Error {
+        public static string Error {
             get {
                 return ResourceManager.GetString("Error", resourceCulture);
             }
@@ -297,7 +297,7 @@ namespace Common.Shared.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Info ähnelt.
         /// </summary>
-        internal static string Info {
+        public static string Info {
             get {
                 return ResourceManager.GetString("Info", resourceCulture);
             }
@@ -306,7 +306,7 @@ namespace Common.Shared.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die List ähnelt.
         /// </summary>
-        internal static string List {
+        public static string List {
             get {
                 return ResourceManager.GetString("List", resourceCulture);
             }
@@ -315,7 +315,7 @@ namespace Common.Shared.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die No ähnelt.
         /// </summary>
-        internal static string No {
+        public static string No {
             get {
                 return ResourceManager.GetString("No", resourceCulture);
             }
@@ -324,7 +324,7 @@ namespace Common.Shared.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die None ähnelt.
         /// </summary>
-        internal static string None {
+        public static string None {
             get {
                 return ResourceManager.GetString("None", resourceCulture);
             }
@@ -333,7 +333,7 @@ namespace Common.Shared.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Trace ähnelt.
         /// </summary>
-        internal static string Trace {
+        public static string Trace {
             get {
                 return ResourceManager.GetString("Trace", resourceCulture);
             }
@@ -342,7 +342,7 @@ namespace Common.Shared.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Value ähnelt.
         /// </summary>
-        internal static string Value {
+        public static string Value {
             get {
                 return ResourceManager.GetString("Value", resourceCulture);
             }
@@ -351,7 +351,7 @@ namespace Common.Shared.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Warning ähnelt.
         /// </summary>
-        internal static string Warning {
+        public static string Warning {
             get {
                 return ResourceManager.GetString("Warning", resourceCulture);
             }
@@ -360,7 +360,7 @@ namespace Common.Shared.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Yes ähnelt.
         /// </summary>
-        internal static string Yes {
+        public static string Yes {
             get {
                 return ResourceManager.GetString("Yes", resourceCulture);
             }
